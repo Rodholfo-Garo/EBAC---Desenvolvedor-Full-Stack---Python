@@ -439,17 +439,118 @@ programa {
 
 para declara caractere
 
-Um texto ou ma palavra é sempre declarado como cadeia e caractere como caracter no Portugol.
+Um texto ou ma palavra é sempre declarado como cadeia e caractere como caractere no Portugol.
 
 Toda cadeia, ou palavra devem estar entre aspas duplas"".
 
-Uma cadeia de caracter pode ser chamada de STRING
+Uma cadeia de caractere pode ser chamada de STRING
 
-A declaração do caracter é feita sempre em aspas simples e a declaraçaõ das cadeias de caracteres(texto) entre aspas dupla
+A declaração do caractere é feita sempre em aspas simples e a declaraçaõ das cadeias de caracteres(texto) entre aspas dupla
 
 Elas devem ser feitas no escopo do programa principal, no caso do protugol, o programa principal é a funçao inicio, se elas forem declaradas fora do programa principal, deve-se considerar que elas estão fora do programa principal e portanto serão usadas dentro do contexto que vc escolheu ou função.
 
-É possivel concatenaras cadeias de caracteres usando o operador aritmético + .
+É possível concatenar as cadeias de caracteres usando o operador aritmético + .
+
+
+
+````javascript
+programa {
+	funcao inicio() {
+		cadeia nome1, ultimoSobrenome1, nomeCompleto1, nome2, ultimoSobrenome2, nomeCompleto2
+		
+		escreva("Olá! Vamos verificar o seu registro! Por favor digite seu primeiro nome: \n")
+		escreva("Digite seu primeiro nome em letras minúsculas.\n")
+		leia(nome1)
+		escreva("Digite seu último sobrenome em letras minúsculas.\n")
+		leia(ultimoSobrenome1)
+		nomeCompleto1 = nome1 + ultimoSobrenome1
+		
+		escreva("Por favor, vamos repetir a operação.\n")
+		
+		escreva("Digite seu primeiro nome em letras minúsculas.\n")
+		leia(nome2)
+		escreva("Digite seu último sobrenome em letras minúsculas.\n")
+		leia(ultimoSobrenome2)
+		nomeCompleto2 = nome2 + ultimoSobrenome2
+		
+		se(nomeCompleto1 == nomeCompleto2){
+		    escreva("Você digitou corretamente. Muito obrigado!")
+		}
+		senao{
+		    enquanto(nomeCompleto1 != nomeCompleto2){
+		        escreva("Você digitou nomes diferentes, por favor, vamos repetir a operação.\n")
+		
+		        escreva("Digite seu primeiro nome em letras minúsculas.\n")
+		        leia(nome2)
+	        	escreva("Digite seu último sobrenome em letras minúsculas.\n")
+	    	    leia(ultimoSobrenome2)
+		        nomeCompleto2 = nome2 + ultimoSobrenome2
+		    }
+	    escreva("Você digitou corretamente. Muito obrigado!")
+		}
+	}
+}
+````
+
+
+
+# Vetores e Matrizes
+
+São 2 tipos de array.
+
+Vetores são um conjunto de dados de um mesmo tipo armazenados no mesmo endereço ( conjunto de dados)
+
+O vetor é uma forma de armazenamento de dados do mesmo tipo, este armazenamento reservar um espaço na memoria do computador.
+
+Ordena o armazenamento em um unico espaço da memória do computador.
+
+Declarar um vetor é paracido com a declaração de uma variavel, porém, inserimos um colchete na frente do nome informando ou não, a quantidade de valor(index) que iremos armazenar.
+
+Ex.
+
+`inteiro nota[4]` - Armazena 4 notas, se o espaço estivesse em branco, e ai vc declara depois.
+
+Ex.
+
+`inteiro nota[] = {2, 3, 45, 9, 81, 74, 23}` 
+
+Para acessar os dados armazenados dentro do vetor, chamamos ele pelo numero do index.
+
+`escreva ("O valor armazenado na posição 2 é: ", nota[2],". \n")`
+
+ele vai mostrar 45
+
+Podemos criar uma variavel e atribuir o valor condido no Vetor a ela chamando pelo index.
+
+Uma das vantagens do uso de Vetores é que vc declara apenas um vez e alimenta quantos dados forem necessarios, em contra partida, para a variável, em cada declaração vc teria que alimentar m valor.
+
+````Javascr
+programa
+{
+	
+inclua biblioteca Util --> ut
+	funcao inicio()
+	{
+		inteiro nota[] = {2, 10, 15, 23, 79, 99, 5}, tamanhoVetor
+
+		tamanhoVetor = ut.numero_elementos(nota)
+
+		escreva("O tamanho do vetor é: ", tamanhoVetor, " .\n")
+
+		escreva("O valor armazenado na posição 2 é: ", nota[2], " . \n")
+
+		para(inteiro i = 0; i < 7; i++){
+			escreva("\n", nota[i], "\n")
+		}
+		
+	}
+}
+
+````
+
+
+
+
 
 
 
