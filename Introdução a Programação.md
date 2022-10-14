@@ -278,17 +278,6 @@ programa {
 
 
 
-````javascript
-Exercicio:
-
-Escreva um programa que verifica se dois valores são multiplos entre si.
-
-
-
-````
-
-
-
 # Rotinas e Funções
 
 
@@ -329,7 +318,7 @@ A resposta aparecer na tela não significa que podemos usar ela.
 
 
 
-Função - As funções são parecidas com as procedimentos, mas, obrigatoriamente, vem apresentar um retorno. Estas respostas podem ser ultilizadas. A função tem que ter o tipo de retorno que ela da.
+Função - As funções são parecidas com os procedimentos, mas, obrigatoriamente, vem apresentar um retorno. Estas respostas podem ser ultilizadas. A função tem que ter o tipo de retorno que ela da.
 
 Você vai pegar o procedimento e acrescentar um comando chamado *Retorne*. retorna é tornar possivel aquilo que vc usa em um programa, vc permite que a função pricipal ( inicio), pegue o valor do q esta na função e use em qualquer outro treixo do código.
 
@@ -441,7 +430,9 @@ para declara caractere
 
 Um texto ou ma palavra é sempre declarado como cadeia e caractere como caractere no Portugol.
 
-Toda cadeia, ou palavra devem estar entre aspas duplas"".
+Toda cadeia, ou palavra, devem estar entre aspas duplas"".
+
+No caracter entre aspas simples '$'.
 
 Uma cadeia de caractere pode ser chamada de STRING
 
