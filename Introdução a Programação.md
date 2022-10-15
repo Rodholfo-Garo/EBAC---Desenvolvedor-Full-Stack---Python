@@ -276,6 +276,29 @@ programa {
 
 ````
 
+```javascript
+programa
+{
+	funcao inicio(){
+		real nota[4]
+		escreva("Digite as notas de cada bimenstre do ano letivo. Use ponto no lugar de virgula. \n")
+
+		/**loop para receber as 4 notas*/
+		para(inteiro i = 0; i<4; i++){
+			escreva("\nInsira a nota: ")
+			leia(nota[i])
+		}
+				
+		/*Loop para mostrar as notas e o index na tela*/
+
+		para(inteiro i = 0; i<4; i++){
+			escreva("A nota na posição ", i, " é ", nota[i], ".\n")
+			
+		}
+	}
+}
+```
+
 
 
 # Rotinas e Funções
@@ -487,15 +510,25 @@ programa {
 
 # Vetores e Matrizes
 
-São 2 tipos de array.
+
+
+São 2 tipos de array. A grande diferença é que no vetor nós temos uma dimensão, então vamos ter um dado como endereço para cada um dos componentes do vetor, ja a Matriz pode ter duas ou mais dimensões.
+
+* Array 
+  - Vetor - array de um dimensão.
+  - Matriz - array de duas ou mais dimensões.
+
+
+
+## Vetores
 
 Vetores são um conjunto de dados de um mesmo tipo armazenados no mesmo endereço ( conjunto de dados)
 
-O vetor é uma forma de armazenamento de dados do mesmo tipo, este armazenamento reservar um espaço na memoria do computador.
+O vetor é uma forma de armazenamento de dados do mesmo tipo, sem a necessidade de declararmos mais de uma vez, este armazenamento reservar um espaço na memoria do computador.
 
 Ordena o armazenamento em um unico espaço da memória do computador.
 
-Declarar um vetor é paracido com a declaração de uma variavel, porém, inserimos um colchete na frente do nome informando ou não, a quantidade de valor(index) que iremos armazenar.
+Declarar um vetor é paracido com a declaração de uma variavel, porém, inserimos um colchete na frente do nome informando com a quantidade de valor(index) que iremos armazenar, ou não
 
 Ex.
 
@@ -538,6 +571,74 @@ inclua biblioteca Util --> ut
 }
 
 ````
+
+````javascript
+programa
+{
+	funcao inicio()	{
+		real nota[4]
+		escreva("Digite as notas de cada bimenstre do ano letivo. Use ponto no lugar de virgula. \n")
+
+		/**loop para receber as 4 notas no vetor*/
+		
+		para(inteiro i = 0; i<4 ; i++){
+			escreva("Insira a nota")
+			leia(nota[i])
+		}
+				
+		/*Loop para mostrar as notas e o index do vetor na tela*/
+		para(inteiro i = 0; i<4; i++){
+			escreva("A nota na posição ", i, " é ", nota[i],".\n")
+		}
+	}
+}
+````
+
+
+
+Montar uma tabela com Vetor
+
+
+
+````javascript
+programa
+{
+	
+	funcao inicio(){
+		cadeia nome[] = {"João", "Maria", "José"}
+		real tempo[] = {12.5, 25.0, 40.0}
+		inteiro numFilho[] = {5, 2, 6}
+		caracter fuma[] = {'S', 'N', 'S'}
+
+		/*Titulo da Tabela*/
+		escreva("\n||NOME\t\t||HORAS TRABALHADAS\t\t||NUM. DE FILHOS\t\t||FUMANTE\n")
+		
+		/*Loop para preencher a tabela*/
+		para(inteiro i = 0; i<3; i++){
+			escreva("\n", nome[i],"\t\t", tempo[i],"\t\t", numFilho[i], "\t\t", fuma[i] )
+		}
+	}
+}
+
+````
+
+
+
+## Matriz
+
+Toda a representação deve levar em consideração o tipo de dado a ser armazenado, ou seja, cada declaração pode armazenar somente dados do mesmo tipo. A  Matriz pode ter duas ou mais dimensões.
+
+* Armazena um conjunto de iformação sempre do mesmo tipo
+* É possível fazer operações isoladas com seus valores.
+* Assim como os Vetores os índices começam com ZERO.
+
+A matriz é declarada com 2 pares de colchetes:
+
+`matriz[][]`
+
+
+
+
 
 
 
