@@ -218,6 +218,23 @@ São estruturas que permitem que vc escreva uma parte do código que dará uma c
 Enquanto (Condição Verdadeira) Então
 	(Instruções)
 FimEnquanto
+
+Ex.
+programa {
+	funcao inicio() {
+		inteiro valor1, contador = 1
+		
+		escreva("Digite o valor: "\n)
+		leia(valor1)
+
+		enquanto(contador <= valor1){
+			escreva(contador, "\n")
+			contador = contador++ /*incremento*/
+		
+		}
+	}
+}
+
 ````
 
 * Para (for) - Ela não precisa de um contador externo .Vc não tem que ficar declarando as variais fora do escopo
@@ -594,11 +611,7 @@ programa
 }
 ````
 
-
-
 Montar uma tabela com Vetor
-
-
 
 ````javascript
 programa
@@ -635,6 +648,39 @@ Toda a representação deve levar em consideração o tipo de dado a ser armazen
 A matriz é declarada com 2 pares de colchetes:
 
 `matriz[][]`
+
+````javascript
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro nota[3][3] /*matriz com 3 linhas e 3 colunas*/
+		escreva("Digite os valores da matriz.\n")
+
+		/*Valores de entrada*/
+		para(inteiro i=0; i< 3; i++)/*Preenche a linha*/{ 
+			para( inteiro j = 0; j <3; j++)/*Preenche a coluna*/{
+				escreva("\n pro favor, digite um valor: ")
+				leia(nota[i][j])
+			}		
+		}
+		
+		/*monta a tabela com os valores*/
+		para(inteiro x = 0; x<3; x++){
+			para(inteiro y = 0; y<3; y++){
+				escreva("[",nota[x][y],"]")
+			}
+			escreva("\n")/*Iprime 3 caracter em cada linha, formando uma tabel*/
+		}		
+	}
+}
+
+````
+
+
+
+
 
 
 
