@@ -3,6 +3,8 @@ let form = document.getElementById('form-deposito');
 /*Tirar reload e conferir nome completo */
 
 //----------Retorna true ou false-------------
+
+
 function validaNome(nomeCompleto){
     const nomeComoArray = nomeCompleto.split(' ');
     return nomeComoArray.length>=2;

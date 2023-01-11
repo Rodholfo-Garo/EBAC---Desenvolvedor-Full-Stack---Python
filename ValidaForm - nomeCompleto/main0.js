@@ -32,7 +32,7 @@ Se le = Caso o nome seje menor q 3, o botão vai estar desablitado
 
 //---------EVENTOS---------------
 
-//* /* * Remover o comportamento do formulario de recarregar a tela, tem que alterar o evento de submição do formulario */
+/* Remover o comportamento do formulario de recarregar a tela, tem que alterar o evento de submição do formulario */
 const form = document.getElementById('form-deposito');
 const nomeBenefi = document.getElementById('nome-benefi');
 
@@ -43,7 +43,8 @@ function validaNome(nomeCompleto){
     return nomeComArray.length >=2;
 }
 
-//para remover o relod do formulario temos que adicionar um parametro na função, este parametro é o EVENTO representado pela letra e)
+//para remover o reload do formulario temos que adicionar um parametro na função, este parametro é o EVENTO representado pela letra e)
+//addEvent adciona ouvintes para eventos do nosso elementos
 
 form.addEventListener('submit', function(e){
 

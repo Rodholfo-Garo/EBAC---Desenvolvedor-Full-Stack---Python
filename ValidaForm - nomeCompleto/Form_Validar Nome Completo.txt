@@ -1,3 +1,17 @@
+Exercicio:
+1 - Primeira Etapa.
+	A. Criar um formulario que valide se o nome é completo.
+	B. Criar mensagens de retorno da validação.
+
+2 - Adicionar elementos Visuais nele
+	A.Inserir mensagem de sucesso no HTML
+	B.Colocar o texto dentro do paragrafo pelo JS
+	C.Ocultar o paragrafo no CSS e editar o atributo CSS no JS
+
+
+
+
+
 DOM - Document Object Model, ele é uma representação do Documento HTML, e o navegador nos da acesso ao documento HTML através do DOM.
 
 Ele nos da acesso a 3 objetos que são pilares que vão compor a nossa pagina:
