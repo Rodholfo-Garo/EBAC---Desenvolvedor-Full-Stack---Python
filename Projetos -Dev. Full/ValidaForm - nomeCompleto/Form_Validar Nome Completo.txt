@@ -1,0 +1,65 @@
+Exercicio:
+1 - Primeira Etapa.
+	A. Criar um formulario que valide se o nome é completo.
+	B. Criar mensagens de retorno da validação.
+	C. Limpar o formulario após o envio.
+
+2 - Adicionar elementos Visuais nele
+	A.Inserir mensagem de sucesso no HTML.
+	B.Colocar o texto dentro do paragrafo HTML pelo JS.
+	C.Ocultar o paragrafo no CSS e editar o atributo CSS no JS.
+	D.Adicionar um evento ao campo de nome completo para a verificação do nome completo ser em tempo real(usar o Evento keyup para pegar em tempo real a ação do usuario)
+	E.Criar uma class atravees do JS para o erro quuando o nome for inclompleto(isso é mais recomendado pq podemos reaproveitar em toda a validação ue for fazer com um campo, em mais lugares que apresentarem esta mensagem)
+
+
+
+
+
+DOM - Document Object Model, ele é uma representação do Documento HTML, e o navegador nos da acesso ao documento HTML através do DOM.
+
+Ele nos da acesso a 3 objetos que são pilares que vão compor a nossa pagina:
+	- History
+	- Documento HTML
+	- Location
+
+- Location
+
+*Recuperar URL do navegador
+	-window.location.href
+
+*Pegar tudo oq vem depois do domino do site
+	- window.location.pathname
+
+- History
+
+*Voltar a pagina
+	-window.history.back()
+
+- DOM
+
+Acessar o documento HTML através do Java Script
+
+ * Para selecionar um elemento HTML atraves do JavaScript, temos que acessar o objeto DOCUMENT.
+
+ * Da para Criar cadeia de seleção de elementosdocument.getElementsByTagName('form')[0].getElementsByTagName('button');
+
+ * Recuperar o input onde op type é number
+document.querySelector('input[type=number]')
+
+ * Recuperar o input através do seletor (Como no CSS)
+document.querySelector('input#num-conta')
+
+ * Selecionar os titulos
+document.querySelector('h1')
+
+Para não correr o risco de fazer uma operação com um item que não exista, usar dentro de um IF
+if (document.querySelector('h1'))
+
+ * Selecionar a tag body
+document.body
+
+Através do JS podemos recuperar atributos de elementos e também setar seus valores
+
+* Desabilitar Botão
+
+document.getElementById('btn-depositar').disabled = beneficiario.value.split(' ').length <3

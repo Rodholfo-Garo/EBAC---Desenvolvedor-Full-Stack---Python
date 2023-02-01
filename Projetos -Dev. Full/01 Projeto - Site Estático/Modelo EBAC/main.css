@@ -1,0 +1,144 @@
+
+/*Estilo 1 - Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilo 2 - Formatação do menu*/
+
+/*Font Google font para os titulos*/
+header, section h2, section h3, form button{
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+
+
+/*Todas as demais fontes do site serão estas*/
+body, input, textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+    
+}
+
+header nav  li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, section .container{
+    display: flex; /*deixa o nome da loja e o menu lado a lado*/
+    align-items: center;/*centraliza o nome da loja e o menu na horizontal*/
+    justify-content: space-between;/*Joga nome e menu para as pontas*/
+
+}
+
+.brands-list img{
+    height: 24px;/*Delimita o tamanho da imagem*/
+}
+
+.brands-list li{
+    display: inline;/*deixa as imagens uma do lado da outra*/
+    margin-right: 8px;/*Coloca espaço entre as imagens*/
+}
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+    color: #182c61;
+}
+section h2{
+    margin: 0 0 16px 10px;    
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store-front{
+    margin-right: 32px;/*Estilo aplicado apenas a fota da fachada*/
+    border-radius: 10px;
+    height: 500px;
+}
+
+.SocialLink img{
+    height: 24px;
+}
+
+.SocialLink li{
+    display: inline;/*Deixa os icones sociais um do lado do outro*/
+    margin-right: 8px;
+}
+
+.SocialLink li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display:block;
+}
+
+.contact_methods{
+    display: flex;
+    justify-content: space-between;/*Espaçamento entre as subseções*/
+}
+
+form input, textarea, button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;/*Deixa a area de texto fixa, não da para o ususario mexer*/
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #182c61;
+    color: #ecf0f1;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;/*Quando passar o mouse vira um dedo*/
+}
+
+form button:hover{
+    background-color: #3756aa;
+}
+
+/*pseudoseletor para mudar a cor das areas selecionadas no formulario*/
+input:focus, textarea:focus{
+    outline-color: #182c61;
+}
+
+footer{
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
