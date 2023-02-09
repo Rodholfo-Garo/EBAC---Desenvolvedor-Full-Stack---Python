@@ -19,12 +19,15 @@ Lógica do Projeto
 3-Trabalhar Roda-pé(médias das notas)
 	a-Criar um array para adiconar as atividades
 	b-Criar um array para adiconar as notas
-	c-Todas vez que o adicona linhas for chamado fazer um push para adicionar o conteudo no array
+	c-Todas vez que o adiciona linhas for chamado fazer um push para adicionar o conteudo no array
 	d-Conferir no console
 	e-Converter para numero decimal
 	f-criar um laço para somar as notas
-	g-retornar a divsão das notas para se ter as medias
+	g-retornar a divisão das notas para se ter as medias
 	h-Jogar o resultado no HTML
-	i-pedir ma entrada do usuario para definir a nota minima
+	i-pedir uma entrada do usuario para definir a nota minima
+	j-converter a entreda de string para float.
+
 4-Não permtir Atividades duplicadas
+	a-No adiconaLinha inserir um IF (usar a função includes)
 	h-Limitar as casa decimais do resultado(toFixed)

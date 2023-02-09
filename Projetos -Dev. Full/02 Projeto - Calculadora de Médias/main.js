@@ -21,6 +21,7 @@ form.addEventListener('submit', function(e) {
     adicionaLinha();
     atualizaTabela();
     atualizaMediaFinal();
+    calculaMediaFinal()
 });
 
 function adicionaLinha(){

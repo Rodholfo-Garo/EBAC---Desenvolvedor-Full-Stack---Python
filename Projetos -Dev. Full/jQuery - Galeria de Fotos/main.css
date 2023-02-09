@@ -9,10 +9,10 @@ header{
     background-color: #5f27cd;
     padding: 16px 0;
     color: white;
-    display: flex;
+    display: flex; /* Deixa botão ao lado do titulo */
     border-bottom: 16px solid orange;
     justify-content: center;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Deixa a letra maiuscula */
     font-style: italic;
 }
 
@@ -31,6 +31,7 @@ form h2{
     margin-bottom: 16px;
 }
 
+/* Aplicando a regra para os dois seletores, eles ficam do mesmo tamanho */
 input, button{
     padding: 8px;
 }
@@ -39,7 +40,7 @@ button{
     background-color: #009432;
     border: none;
     cursor: pointer;
-    font: bold;
+    font-weight: bold;
     text-transform: uppercase;
     color: white;
 
@@ -75,11 +76,11 @@ ul li img{
 .overlay-img-link{
     padding: 16px;
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute; /*//para não vazr no layhout o elemento pai tem que ter o relative */
+    position: absolute; /*//para não vazar no layout o elemento pai tem que ter o relative */
     bottom: 0;
     left: 0;
     width: 100%;
-    opacity: 0;/*Propriedade para remover a tarja de cima das fotos*/
+    opacity: 0;/*Propriedade para remover a tarja de cima das fotos, vai de 0 a 1*/
     transition: all ease .5s; /*Efeito de transição ao mostra a tarja*/
 }
 
@@ -92,6 +93,6 @@ ul li:hover .overlay-img-link{
 /*Mudar cor do link*/
 .overlay-img-link a{
     color: white;
-    text-decoration: none;/*Remove o _*/
+    text-decoration: none;/*Remove o underline*/
 
 }
