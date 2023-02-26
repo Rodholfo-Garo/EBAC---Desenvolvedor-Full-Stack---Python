@@ -1,0 +1,252 @@
+----------------- GIT - Via Terminal
+
+* Configurar nome e usuario
+	* git config --global user.name "nome"
+	* git config --global user.email "email"
+
+
+
+* Criar um diretorio
+	* mkdir "nome da pasta"
+
+* Conferir se foi criada
+	* ls
+
+* Criar um arquivo
+	* echo "conteudo" > nomedoarquivo.txt
+
+* Ver o conteudo dentro do arquivo
+	* cat nome do arquivo
+
+* Deletar o arquivo
+	* rm -r nome do arquivo
+
+
+* Conferir se ele foi deletado
+	* ls
+
+* Incializar um repositório
+	* Entrar na pasta e digitar git init .
+
+* Criar 2 arquivo
+	* echo "conteudo" > nomedoarquivo1.txt
+	* echo "conteudo" > nomedoarquivo2.txt
+
+* Conferir status do projeto
+	* git status
+
+* Adicionar arquivo ao Staged
+	* git add nomedoarquivo1.txt
+
+* Conferir em staged e o outro em Untracked
+	* git status
+
+* Remover do stage
+	* git rm --cached nome do arquivo
+
+* Conferir se os 2 estão Untracked, não fazem parte do staged
+	* git status
+
+* Adicionar todos os arquivos no staged de uma vez
+	* git add .
+
+* Salvar no repositório dizendo que incluimos os arquivos
+	* git commit -m "Obs. da alteração"
+
+* Modificar o arquivo para ele voltar para Staged
+	* echo "conteudo alterado" > nomedoarquivo1.txt
+
+* Adicionar o arquivo ao staged e comitar tudo em um unico comando
+	git commit -am "Obs. da alteração2
+
+ ----------------- GIT - Via VSCODE
+
+* Com o VSCODE aberto, abrir o projeto
+	- File
+	- Open Folder
+	- Ir até a pasta com os arquivos criados
+	- Criar um arquivo novo, o changelog.md
+
+* Abri o terminal no VSCODE
+	- Apertar F1 e digitar New Terminal, e creat a new terminal
+	- No terminal, digitar git status, ele vai mostrar que o chagenlog.md ainda não foi adicionado ao Staged
+
+* Adicionar o arquivo ao Staged
+	- No VSCODE, ir até o icone do GIT, colocar o mouse sobre o arquivo e cklicar no sinal de +.
+
+* Conferir no terminal se o arquivo mudou para area de staged
+	- git status
+
+* Para fazer o commit no VSCODE
+	- Na guia do GIT no VSCODE, ir até a caixa de mensagem aberta na parte superior e digitar a "OBS. da alteração feita", isso faz o q o -m faz, e clicar no check, isso faz o commit.
+
+* Visualizar o arquivo changedlog.md em MarkDown no VSCODE
+	- Apertar F1 e digitar MarkeDonw: Open Preview
+
+* Escrever os tipos de nomenclaturas usadas quando fazemos a mensagem do commit
+	- chore = pequena tarefa
+		git commit -m "chore: removendo arquivo.txt"
+
+	- fix = correções
+		git commit -m "fix: correçõa no calculo de medias"
+
+	- feat = inclusão de funcionalidades
+		git commit -m "feat: inclusão de função para calcular mediana"
+
+	- docs = atualização do documento
+		git commit -m "docs: atualizando o changelog.md"
+
+----------------- GIT - Via Terminal - LOG
+
+* Visualizar registros de commits realizados
+	- Abrir a pasta criada pelo PowerShell
+	- Ver Historico de commit criado
+		git log
+
+* Visalizar variações
+	- git log -n 2 (mostra os 2 ultimos commits)
+	- git log --oneline (traz um resumo)
+
+* Visulaizar o conteudo que foi alterado
+	- git log --stad (mostra o log com os arquivos que foram modificados)
+
+* Podemos unir os comandos
+	- git log -n 3 --oneline
+
+ ----------------- GIT - Via VSCODE - LOG
+
+* Instalar a extensão no VSCODE
+	- Git History
+
+* Selecionar o arquivo clicando 2 vezes nele e apertar F1, digitar Git View History e clicar nela
+	- Ela vai apresentar a mesma visão dos commits, porém de uma forma mais amigavel
+
+----------------- GIT - Via Terminal - HISTORICO
+
+* Conferir se tem algo removido em Staged
+	- git status
+
+* Caso positivo, desfazer isso
+	- git restore nome_do_arquivo.txt
+
+* Criar novo arquivo
+	- acho "conteudo" > novo_arquivo.txt
+
+* Commitar adição
+	- git add .
+	- git commit -m "descrição"
+	
+* Mudar conteudo do arquivo criado
+	- echo "conteduo 2" > novo_arquivo.txt
+
+* Conferir se houve modificação no staged
+	- git status
+
+* Desfazer modificação do arquivo
+	- git checkout novo_arquivo
+
+* Conferir se o arquivo saiu do staged
+	- git status
+
+* Conferir se o conteudo voltou
+	- cat novo_arquivo.txt
+		tem que aparecer o contedo antigo,
+
+* COnferir os commits feitos
+	- git log --oneline
+
+* Voltar commits com o git
+	-Conferir os logs
+		- git log --oneline
+
+* Voltar o commit
+	- git checkout parametro_id_do_commmit (esta na tela do git log --oneline, texto amarelo)
+O git checkout, além de desfazer alguma alteração temporaria, de conteudo, o git checkout serve para navegar entre os commits.
+
+* Conferir se houve a alteração na pasta
+	- ls
+
+----------------- GIT - Via Terminal - Branches
+
+Obs: Qunado criamos uma nova branch, o git se baseia na atual, e ela herda a modificação feita na branch
+
+* Listar as Branches
+	- git branch
+* Alternar entre branchs
+	- git checkout nome_da_branch ( ele muda para esta brench)
+
+O git checkout serve para desfazer mudanças em arqivos que ainda não foram commitados ou adicionados ao Staged etambem serve para navegação entre commits e branchs.
+
+* Criar uma branch
+	-  git branch nome_da_branch
+
+* Conferir se a branch foi criada
+	- git branch
+
+* Criar um arquivo na branch nova
+	- echo "conteudo" > nome_do_arquivo.txt
+
+* Adicionar arquivo ao Staged
+	- git add .
+
+* Commitar 
+	- git commit -m "descrição"
+
+* trocar de branch ao mesmo tempo que cria ela
+	- git checkout -b nome_da_branch
+
+* Criar uma branch apontando como referencia a branch atual
+	- git branch nome_da_branch_nova nome_da_branch_referencia
+
+* Deletar branch
+	- git branch -b nome_branch
+
+
+----------------- GIT - Via Terminal - Merge
+
+* Criar uma branch seguindo os principios de nomenclatura e que ja mude para nova
+	- git checkout -b feature/new_file
+
+* Criar um arquivo
+	- echo "conteudo do arquivo"  nome_do_arquivo.txt
+
+* Commitara alteração
+	- git add .
+		- git commit -m add new file"
+
+* Voltar para a branch principal
+	- git checkout master
+
+* Pegar o conteudo da branch criada para a master
+	- git marge nome_da_branch
+
+* Vizulizar o conteudo transferido para a branch master
+	- cat nome_do_arquivo
+
+----------------- GIT - Via VSCODE- Merge (Conflito entre 2 programadores)
+
+* Abrir o VSCODE pelo terminal na pasta atual
+	- code .
+
+*Criar um arquivo conflito.txt
+*Inserir um conteudo
+*Commitar o arquivo no VSCODE - "add conflito.txt"
+*Criar uma branch chamada branch_a
+*Editar o conteudo do arquivo chamado conflito.txt
+*Commitar este arquivo
+*Voltar para a branch master
+*Criar outra branch chamada de branch_b
+*Fazer uma alteração diferente no arquivo conflito.txt
+*Commitar alteração
+*Voltar para a Branch Master
+*Para mesclar as branch no VSCODE, aperte F1 e digite Git Merge Branch
+*Selecione a branch que vai fazer o marge com a master (branch_a)
+*Fazer o marge da branch_b
+
+O arquivo vai ficar vermelho, indicando que há um conflito, escolha qual mudança vc vai querer aceitar.
+
+*Salvar o arquivo e commitar a modificação
+
+
+
+

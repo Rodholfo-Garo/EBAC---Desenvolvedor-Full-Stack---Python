@@ -287,7 +287,7 @@ git branch novaBranch // Criar Branch
 git branch //Conferir se foi criada
 echo "conteudo">arq1.txt //Criar arquivo na Branch
 git add arq1.txt //Adiciona ao Staged
-git commit -pm "Obs. alteração" // Commitar
+git commit -am "Obs. alteração" // Commitar
 git checkout -b outra_branch //Trocar de branch ao mesmo tempo que cria
 git branch nova_branch2 outra_branch // Cria branch apontando como referencia a atual
 git branch -D outra_branch // Deletar branch

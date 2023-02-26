@@ -1,0 +1,24 @@
+- resetar CSS
+
+------Editar o Header
+
+- Deixar itens da lista do header um do lado do outro
+- Emglobar todo o conteudo do header no HTML com uma DIV
+- Adicionar uma classe container a DIV criada
+- inserir largura, margin nos 4 cantos de forma a ficar centralizado
+
+------Editar as sections
+
+- Colocar ID's nas duas sections
+- Criar DIV dentro das duas section (criar com o atalho que é o .container)
+- Replicar os edições do container nas sections
+
+------Organizar os Artigos
+
+- Criar DIV com a classe articles para englobar os artigos
+- Editar no CSSS o Display para ficar um ao lado do outro
+- Editar as imagens dentro dos artigos dando altura maxima (quando editamos a largura, a alturase adequa paa manter a proporção.)
+- EM articles deixar 3 noticias por linha (limitar a proproção em 30%)
+- Adicionar mais um artigo para vcer se esta respeitando o limitie de 3 por linha.
+- Caso não, inserir a propriedade flex-wrap:wrap; na classe articles
+- Distribuir os 10% de sobra de espaço igualmente entre as margens dos elementos

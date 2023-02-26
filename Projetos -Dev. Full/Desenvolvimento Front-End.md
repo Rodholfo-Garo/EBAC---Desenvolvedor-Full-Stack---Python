@@ -859,3 +859,63 @@ console.log(form);
    ````
 
    
+
+# Plugins jQuey
+
+## Plugins Utilizados
+
+- Slick - Plugins para criar carrossel, slides.
+
+  ````javascript
+  /*faz o slide mudar sozinho*/ 
+  $('#carousel-imagens').slick({
+                  autoplay: true 
+              });
+  ````
+
+  
+
+- Maskplugin - Plugin para criar mascaras em formulários. O numero 0 representa os numeros, e a letra S, representa as letras.
+
+  ````js
+  /*Chamar Plugin MaskPlugin*/
+              $('#telefone').mask('(00) 00000-0000',{
+                  placeholder:'Seu melhor numero'
+              })
+  ````
+
+  
+
+- Validate - Plugin para fazer validações em formulários. Este plugins não aceita ID, trabalha apenas com o nome da Tag. Através deste plugin, conseguimos interceptar o evento de submit.
+
+  ````js
+   /*Chamar plugin Validate*/
+              $('form').validate({
+                  /*chamar o name dos campos*/
+                  rules:{
+                      nome: {
+                          required: true
+                      },
+                      email: {
+                          required: true,
+                          email: true
+                      },
+                      telefone: {
+                          required: true
+                      },
+                      mensagem: {
+                          required: true
+                      },
+                      veiculoDeInteresse: {
+                          required: false
+                      }
+                  },
+                  /*Editar mensagem de erro para cada campo*/
+                  messages:{
+                      nome:'Por favor, insira o seu nome'
+                  },
+  
+  ````
+
+  
+
