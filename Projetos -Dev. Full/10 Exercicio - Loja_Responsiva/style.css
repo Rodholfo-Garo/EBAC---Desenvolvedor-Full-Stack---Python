@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #25252a;
+    box-shadow: 0px 3px 10px #464646;
+    color: white;    
+}
+
+.menu-hamburguer{
+    display: none;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.sub-menu > a{
+    color: white;
+}
+
+.menu > li{
+    float: left;
+    list-style: none;
+    padding: 15px;
+    padding-left: 0px;
+    position: relative; 
+    cursor: pointer;   
+}
+
+.sub-menu{
+    display: none;
+    border: 1px solid red;    
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    top: 100%;
+    background-color: #25252a;
+    box-shadow: 0px 3px 10px #464646;    
+}
+
+.menu li:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu li{
+    display: block;
+}
+
+#link-topo{
+    text-decoration: none;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px #333;
+}
+
+
+.sobre img{
+    width: 100%;
+}
+
+.sobre{
+    display: flex;
+    margin: 20px;
+    
+}
+
+.sobre div{
+    padding-left: 2%;
+}
+
+.sobre div h2{
+    border-bottom: 2px solid black;
+}
+
+.sobre div p{
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    
+    padding: 20px 0;
+}
+
+.product{
+    background-color: #ffff;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.50);    
+    margin: 10px;
+    width: 300px;
+    height: 540px;
+}
+
+
+
+.caixa-img{
+    display: flex;
+    justify-content: center;
+}
+
+.product img{
+    width: 90%;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+a{
+    color:black;
+    display: block;
+}
+.valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+   }
+.oferta{
+    text-decoration: line-through;
+    color: #6d6d6d;
+    text-align: justify;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.preco{
+    font-size: 24px;
+    font-weight: 700;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+button{
+   background-color: #28bb1b;
+   border-radius: 8px;
+   border: none;
+   color: white;
+   height: 35px;
+   font-size: 16px;
+   cursor: pointer;
+   margin-bottom: 10px;
+ 
+}
+p{
+    text-align: justify;
+    padding: 0 8px;
+}
+
+.product a{
+    font-size: 16px;
+    color: #6d6d6d;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+input{
+    margin-bottom: 5px;
+    background:none;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+    
+}
+
+.inputBox{
+    position: relative;
+}
+
+.labelinput{
+    position: absolute;
+    top: 0;
+    color: greenyellow;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ .labelinput, input:valid ~ .labelinput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerbsedynikp5g0ylo80lue;
+}
+
+textarea{
+    resize: none;
+    margin: 20px 0;
+    width: 100%;
+}
+
+
+.menu form{
+    display: flex;
+}
+
+.menu form input{
+    margin-right: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+form button{
+    margin-top: 5px;
+    width: 90%;
+}
+
+button:hover{
+    background-color: #21b653;
+    transform: scale(1.1);
+}
+.endereco{
+    color: white;
+    text-align: center;
+    grid-area: 1/3/2/3;
+    padding-top: 10px;
+    
+}
+.endereco > p{
+    color: white;
+    margin-left: 20px;
+    text-align: center;   
+    
+}
+
+.endereco >h2{
+
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+.socialIcons{
+    margin-top: 20px;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+.socialIcons img{
+    display: inline-flex;
+    width: 30%;
+    padding: 20px;
+}
+
+footer{  
+    background-color: #25252a;    
+    box-shadow: 0px 3px 10px #464646;  
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.rodape{
+    max-width: 1024px;    
+    width: 100%;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+    justify-content: space-between;
+}
+
+.contato{
+    display: block;  
+    width: 100%;
+}
+
+
+.copy{
+    grid-area: 2/1/2/4;
+    text-align: center;
+    color: white;
+    font-size: 13px;    
+}
+
+@media screen and (max-width:640px){
+
+    .sobre h2{
+        font-size: 2em;
+    }
+
+    .produtos h2{
+        font-size: 2em;
+    }
+
+    .container{
+        max-width: 100%;  
+                   
+    }
+
+    .sobre{
+        display: block;
+    }
+
+    .produtos{
+        display: block;
+        
+    }
+
+    .product{
+        width: 90%;
+        height: 100%;
+        padding-bottom: 10px;        
+    }
+
+ 
+
+    .search{
+        padding: 20px 0 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .search button{
+        width: 100%;
+        font-size: 1em;
+        padding: 2px 5px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+   /* .menu {
+        display: none;
+    } */
+
+
+    .menu-hamburguer{
+        display: block;        
+        width: 32px;
+        cursor: pointer;
+        margin-right: 20px;
+        
+    }
+
+    .menu-hamburguer span{
+        height: 2px;
+        background-color: white;
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;        
+    }
+    
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .celphone{
+        display: block;
+        flex-wrap: wrap;
+        width: 90%;
+        
+    }
+
+
+
+    .menu >li{
+        display: block;
+        width: 100%;
+    }
+
+    nav > ul{
+        display: flex;      
+        flex-direction: column;
+        width: 70%;
+        
+    }
+
+    nav > li{
+        display: flex;
+        flex-direction: column;
+        background-color: pink;
+    }
+
+    .sub-menu{
+        display: none;
+        border: 1px solid red;    
+        position: absolute;
+        left: 0px;
+        width: 200px;
+        background-color: #25252a;
+        box-shadow: 0px 3px 10px #464646;   
+        z-index: 2; 
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+        .produtos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+}
