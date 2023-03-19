@@ -119,7 +119,7 @@ nav{
 
 .produtos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
