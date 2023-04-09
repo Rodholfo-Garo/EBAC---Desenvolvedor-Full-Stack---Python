@@ -1,0 +1,138 @@
+#cabecalho{
+    background-color: #65daf9;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.navbar-nav .nav-link.active{
+    color: white;
+}
+
+.nav-link{
+    text-align: center;
+}
+
+
+
+/* Slide */
+
+.container-fluid{
+    padding: 0;
+}
+
+/* 
+ #mainSlider .carousel-inner, #mainSLider .carousel-item{
+     height: 90vh;
+}  */
+
+#mainSlider .carousel-caption{
+    top: 20%;
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.main-btn{
+    background-color: #65daf9;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border-color: #65daf9;
+}
+
+.carousel-indicators .active{
+    background-color: #65daf9;
+}
+
+/* Sobre a Empresa */
+
+#about-area{
+    background-color: #f9f9f9;
+}
+
+.main-title{
+    color: #444;
+    margin: 65px 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    
+}
+
+
+
+.about-title{
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* About List */
+
+#about-list{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+#about-list li{
+    line-height: 30px;
+}
+
+#about-list i{
+    color: #65daf9;
+    margin-right: 10px;
+}
+
+/* Serviços */
+.service-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service-box i, .service-box h4{
+    transition: 0.5s;
+}
+
+.service-box i{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.service-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h4{
+    color: #65daf9;
+}
+
+/* Portfolio */
+
+.card{
+    margin: 10px;
+}

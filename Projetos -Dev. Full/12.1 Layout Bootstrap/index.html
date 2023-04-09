@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b2d7c414bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Menu -->
+    <header id="cabecalho" >     
+        <div class="navbar navbar-expand-lg">            
+            <div class="container">
+                <!-- Colocar Logo -->
+                <h1 class="navbar-brand">Layout Bootstrap</h1>
+                <button data-bs-toggle="collapse"  data-bs-target="#menu" type="button" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-tem">
+                            <a class="nav-link active" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-tem">
+                            <a class="nav-link " href="#service-area">Serviço</a>
+                        </li>
+                        <li class="nav-tem">
+                            <a class="nav-link" href="#Portifolio">Portfólio</a>
+                        </li>
+                        <li class="nav-tem">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+        <!-- Slide -->
+        <div class="container-fluid">
+            <div id="mainSlider" class="carousel slide carousel-fade sm-12"  data-bs-ride="carousel">
+        <!-- Bulet dos Slides -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" ></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" ></button>
+                </div>
+                <!-- Conteudo do Carousel -->
+                <div class="col-sm-12 col-md-6 col-lg-4 carousel-inner">
+                    <div data-bs-interval="2000" class="carousel-item active">
+                        <img src="/img/banner1.jpg" class="img-fluid d-block w-100" alt="Projetos de e-commerce">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Tenha seu e-commerce</h2>
+                            <p>Conte com nossa experiencia!</p>
+                            <a href="#" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img src="/img/banner2.jpg" class="img-fluid d-block w-100" alt="Projetos persolanizados">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Tire seu projeto do papel?</h2>
+                            <p>Estas prontos para te atender.</p>
+                            <a href="#" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div> 
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img src="/img/banner3.jpg" class="img-fluid d-block w-100" alt="Projetos de e-commerce">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Divulgue sua marca</h2>
+                            <p>Temos uma equipe altamente qualificada para resolver seu problema.</p>
+                            <a href="#" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div>                   
+                </div>
+                <button data-bs-target="#mainSlider" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon" ></span>                   
+                </button>
+                <button data-bs-target="#mainSlider" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon" ></span>
+                    
+                </button>
+            </div>
+        </div>
+
+    
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <!-- Sobre a Empresa -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="main-title">Sobre a Agência</h3>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid w-100" src="https://cdn.pixabay.com/photo/2019/02/18/19/59/graphic-4005286_960_720.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <section id="sobre">
+                        <h3 class="about-title">Desenvolvimento Web e Marketing Digital</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae impedit dolore provident ut quis ab consequuntur aliquid eos soluta deserunt, dicta, harum possimus consectetur autem explicabo ex mollitia minus. Libero!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae impedit dolore provident ut quis ab consequuntur aliquid eos soluta deserunt, dicta, harum possimus consectetur autem explicabo ex mollitia minus. Libero!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae impedit dolore provident ut quis ab consequuntur aliquid eos soluta deserunt, dicta, harum possimus consectetur autem explicabo ex mollitia minus. Libero!</p>
+                        <ul id="about-list">
+                            <li><i class="fas fa-check"></i> Desenvolvimento Web</li>
+                            <li><i class="fas fa-check"></i> Marketing Digital</li>
+                            <li><i class="fas fa-check"></i> Gestão de trafego Pago</li>
+                            <li><i class="fas fa-check"></i> Sistema de Pagamento Próprio</li>
+                        </ul>
+                    </section>
+                </div>                
+            </div>
+        </div>  
+        <!-- Serviços -->
+        <div id="service-area">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12">
+                    <h3 class="main-title">Serviços</h3>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 service-box">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Aplicativos Nativos</h4>
+                    <p>Dispositivos moveis construindo aplicativos nativos.</p>
+                </div>  
+                <div class="col-sm-12 col-md-6 col-lg-4 service-box">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h4>E-commerce</h4>
+                    <p>Temos ma plataforma própria de e-commerce que se adapta ao se negócio.</p>
+                </div> 
+                <div class="col-sm-12 col-md-6 col-lg-4 service-box">
+                    <i class="fas fa-paint-brush"></i>
+                    <h4>Designer Criativo</h4>
+                    <p>Profissionais especialistas em UI/UX.</p>
+                </div>          
+                <div class="col-sm-12 col-md-6 col-lg-4 service-box">
+                    <i class="fab fa-google"></i>
+                    <h4>Experts em SEO</h4>
+                    <p>Com nosso servços seu site será melhor posicionado no Google e venderá mais.</p>
+                </div> 
+                <div class="col-sm-12 col-md-6 col-lg-4 service-box">
+                    <i class="fas fa-hands-helping"></i>
+                    <h4>Suporte 24/7</h4>
+                    <p>Tenha sempre um profissional para te auxiliar.</p>
+                </div> 
+                <div class="col-sm-12 col-md-6 col-lg-4 service-box">
+                    <i class="fas fa-server"></i>
+                    <h4>Experiencia em Servidores</h4>
+                    <p>Garantimos uptime e também rápido tempo de resposta para o seu cliente.</p>
+                </div>                           
+            </section>
+        </div>
+        <!-- Portfólio -->
+        <div id="Portifolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Portfólio</h3>
+                    </div>              
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 ">
+                            <article class="card">
+                                <header class="card-header">
+                                    <h4>Desenvolvimento Web</h4>
+                                </header>
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Titulo do Card</h4>
+                                    <h5 class="card-subtitle"></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary">Saber Mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <h4>Desenvolvimento Web</h4>
+                                </header>
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Titulo do Card</h4>
+                                    <h5 class="card-subtitle"></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary">Saber Mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <h4>Desenvolvimento Web</h4>
+                                </header>
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Titulo do Card</h4>
+                                    <h5 class="card-subtitle"></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary">Saber Mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <h4>Desenvolvimento Web</h4>
+                                </header>
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Titulo do Card</h4>
+                                    <h5 class="card-subtitle"></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary">Saber Mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <h4>Desenvolvimento Web</h4>
+                                </header>
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Titulo do Card</h4>
+                                    <h5 class="card-subtitle"></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary">Saber Mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <h4>Desenvolvimento Web</h4>
+                                </header>
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Titulo do Card</h4>
+                                    <h5 class="card-subtitle"></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary">Saber Mais</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>      
+            </div>
+                
+        </div>
+        
+        
+    </div>
+    
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
