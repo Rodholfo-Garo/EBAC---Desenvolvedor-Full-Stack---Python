@@ -990,33 +990,34 @@ console.log(form);
    
    ```html
    <h2>Entre em contato</h2>
-       <form >
-           <label class="form-label" for="nome">Seu nome:</label>
-           <input class="form-control" type="text" id="nome"/>
-           <label class="form-label" for="email">Seu e-mail:</label>
-           <input class="form-control" type="email" id="email"/>
-           <label class="form-label" for="mensagem">Sua mensagem</label>
-           <textarea id="mensagem" class="form-control"></textarea>
+                   <form action="">
+                       
+                       <label class="form-label" for="nome">Seu nome:</label>
+                       <input class="form-control" type="text" id="nome"/>
+                       <label class="form-label" for="email">Seu e-mail:</label>
+                       <input class="form-control" type="email" id="email"/>
+                       <label class="form-label" for="mensagem">Sua mensagem</label>
+                       <textarea id="mensagem" class="form-control"></textarea>
+                       
+                       <label class="form-label" for="">País de Origem</label>
+                       
+                       <div class="col-4">                        
+                           <select class="form-select form-select-lg" name="" id="">
+                               <option value="">opção 1</option>
+                               <option value="">opção 2</option>
+                               <option value="">opção 3</option>
+                               <option value="">opção 4</option>
+                               <option value="">opção 5</option>
+                               <option value="">opção 6</option>
+                           </select>
+                       </div>
    
-           <label class="form-label" for="">País de Origem</label>
-   
-           <div class="col-4">                        
-               <select class="form-select form-select-lg" name="" id="">
-                   <option value="">opção 1</option>
-                   <option value="">opção 2</option>
-                   <option value="">opção 3</option>
-                   <option value="">opção 4</option>
-                   <option value="">opção 5</option>
-                   <option value="">opção 6</option>
-               </select>
-           </div>
-   
-           <div class="form-check form-switch">
-               <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do SITE</label>
-               <input class="form-check-input" type="checkbox" id="aceito-termos">
-           </div>
-           <button class="btn btn-success">Enviar</button>              
-       </form>
+                       <div class="form-check form-switch">
+                           <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do SITE</label>
+                           <input class="form-check-input" type="checkbox" id="aceito-termos">
+                       </div>
+                       <button class="btn btn-success">Enviar</button>              
+                   </form>
    ```
    
    
@@ -1211,4 +1212,4 @@ console.log(form);
    
    
    
-   ###
+   

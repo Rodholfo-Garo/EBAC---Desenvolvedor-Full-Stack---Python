@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #5271ff, #1e90ff);
+}
+
+fieldset{
+    padding: 15px;
+}
+
+button{
+    width: 100%;
+}
+
+.container{
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    color: #f8f8f8;
+
+}
+
+.container_input{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label{
+    width: auto;
+}
+
+input{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+button{
+    background-color: #23cf5c ;
+}
+

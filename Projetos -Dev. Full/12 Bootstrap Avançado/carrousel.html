@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel Com Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+<body>
+   <div class="container">
+        <!--O atribto data-bs-ride  usado para marcar um carrossel como animado a partir do carregamento da página. Ele indica ao BOOTStrap que este conteudo se trata de umm carousel-->
+    <!-- Neste conteiner do carousel, colocamos a classe carousel-fade para adcionar um efeito na transição das imagens -->
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+
+        <!-- Container do Carousel -->
+        <div class="carousel-inner">
+
+            <!--Slide do carrousel | O atributo data-bs-interval edita o tempo de transição da imagem | A classe .active precisa ser adicionada a primeira imagem dele para que ele funcione  -->
+            <!-- A classe d-block aplica o display block e o w-100 ocupa  largura total -->
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/04/02/08/34/snake-7894057_960_720.jpg" alt="">
+                <!-- Inserir Texto no Carousel -->
+                <div class="carousel-caption">
+                    <h2>Foto de uma cobra</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/03/28/09/28/cat-7882701_960_720.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Foto de um gato</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/03/29/17/16/street-art-7886014_960_720.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Foto de um bairro</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Botão para voltar 1 slide -->
+        <!-- Para adiconar interatividade ao botão, temos que identificar o carousel adicionando um ID e no botão adicionar 2 atributos, o primeirko data-bs-target(vaidizer qual elemento vai ser afetado com o efeito do clique )="#carousel-exemplo"-->
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <!-- Adicionar Indicadores -->
+        <!-- O atributo data-bs-slide-to="0" vai dizer para qual slide o carousel deve ir, ele fuunciona como um array do JS -->
+        <!-- O primeiro elemento precisa ter uma classe para indicar que ele é o elemento ativo quando a pagina for carregada -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            
+        </div>
+    </div>
+   </div>
+    
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

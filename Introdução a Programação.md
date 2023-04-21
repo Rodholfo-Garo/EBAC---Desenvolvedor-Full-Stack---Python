@@ -671,7 +671,7 @@ programa
 			para(inteiro y = 0; y<3; y++){
 				escreva("[",nota[x][y],"]")
 			}
-			escreva("\n")/*Imprime 3 caracter em cada linha, formando uma tabel*/
+			escreva("\n")/*Iprime 3 caracter em cada linha, formando uma tabel*/
 		}		
 	}
 }

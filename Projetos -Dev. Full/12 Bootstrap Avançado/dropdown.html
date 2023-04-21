@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown com Bootstrap</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+</head>
+<body>
+    <!-- Botão Simples -->
+    <div class="container">
+        <div class="dropdown">
+            <!-- O atributo data-bs Traz animação ao botão com o uso do JS -->
+            <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle">
+                Cadastrar
+            </button>
+            <!-- POdemos adicionar variaçoes no menu dropdown (menu-dark) -->
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <!-- Estilizando o menu pelo BS -->
+                <li class="dropdown-item">
+                    <a href="#">Novo usuario</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo Fornecedor</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo Funcionario</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Botão Composto -->
+    <div class="container">
+        <!-- btn-group Junta os botões, faz parecer que é um botão só -->
+        <div class="btn-group">
+
+            <!-- Da para Colocar alguma outra ação, como encaminhar para outra pagina -->
+            <button class="btn btn-primary ">
+                Cadastrar
+            </button>
+
+            <!-- Acessa opções -->
+            <button class="btn btn-primary dropdown-toggle dropdonw-toggle-split" data-bs-toggle="dropdown"> 
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="dropdown-item">
+                    <a href="#">Novo usuario</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo Fornecedor</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo Funcionario</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

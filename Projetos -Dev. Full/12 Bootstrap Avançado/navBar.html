@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar com Bootstrap</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+
+    <!-- Editar o Item ativo do menu hamburguer em branco -->
+    <style>
+        .navbar-nav .nav-link.active{
+            color: white;
+        }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        /* Fazer cada seção ocupar 100% da area visivel */
+        section{
+            height: 100vh;
+            background-color: antiquewhite;
+            padding-top: 70px;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <!-- expand-lg tira o hamburguer no desktop -->
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Titulo do Site</h1>
+
+                <!-- Adicionar menuHamburguer -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Acionar botão Hamburguer -->
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <!-- Adicionar espaçamento entre o links class-"nav-pills -> nav-item -> nav-link" -->
+                    <!-- navbar-nav deixa os itens um a baixo do outro -->
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <!-- a classe active mostra qual pagina esta ativa no momento -->
+                            <a class="nav-link active" href="#incio">Início</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Produto">Produtos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Promocoes">Promoções</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mudar Item ativo ao rolar a pagina -->
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="incio">
+            <h2 >Início</h2>
+        </section>
+    
+        <section id="Produto">
+            <h2 >Produtos</h2>
+        </section>
+    
+        <section id="Promocoes">
+            <h2>Promoções</h2>
+        </section>
+    
+        <section id="Contato">
+            <h2>Contato</h2>
+        </section>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

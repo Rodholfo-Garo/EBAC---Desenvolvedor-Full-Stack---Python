@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-color: #cbcbcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+/*Quebra a linha do card*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 593px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 4px 10px rgba(0 , 0, 0, 0.25);
+    padding: 20px;
+}
+
+.carrousel{
+    overflow: hidden; /*Esconder o transbordo*/
+    width: 310px;
+    height: 270px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.caixa-img{
+    display: flex;
+    transition: transform 0,5s ease-in-out;
+    transform: translateX(0);
+
+}
+
+.carrousel img{
+    width: 310px;
+    height: 270px;
+}
+
+h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.oferta{
+    color: #6d6d6d;
+    text-decoration: line-through;
+
+}
+
+.preco{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.colors{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cores{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.cor--cinza{
+    background-color: #9c9c9c;
+}
+
+.cor--vermelho{
+    background-color: #f70505;
+}
+
+.cor--dourado{
+    background-color: #f8cc06;
+}
+
+button{
+    background-color: #28bb1b;
+    border-radius: 8px;
+    border: transparent;
+    color: white;
+    height: 43px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a{
+    font-size: 16px;
+    color: #6d6d6d;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+/*Criar o Seletor de cor*/
+.selecionado{
+    border: 2px solid rgb(59, 209, 5);
+}

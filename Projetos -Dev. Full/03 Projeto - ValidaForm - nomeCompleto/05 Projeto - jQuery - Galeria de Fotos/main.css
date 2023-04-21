@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: white;
+    display: flex; /* Deixa botão ao lado do titulo */
+    border-bottom: 16px solid orange;
+    justify-content: center;
+    text-transform: uppercase; /* Deixa a letra maiuscula */
+    font-style: italic;
+}
+
+header button{
+    margin-left: 16px;
+}
+
+form{
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+/* Aplicando a regra para os dois seletores, eles ficam do mesmo tamanho */
+input, button{
+    padding: 8px;
+}
+
+button{
+    background-color: #009432;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+#btn-cancelar{
+    background-color: red;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* limitar tamanho dos itens da listagem// */
+
+ul li{
+    max-width: 25%;
+    list-style: none;/* Remover ponto da lista */
+    position: relative;/*Elemento pai do link*/
+    max-height: 200px;/*Corrige temanho das imagens*/
+    overflow-y: hidden;/*Oculta sobra das imagens*/
+}
+
+/* faz imagem ocupar 100% da area */
+
+ul li img{
+    width: 100%;
+   
+}
+
+/* estilizar link da imagem */
+.overlay-img-link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute; /*//para não vazar no layout o elemento pai tem que ter o relative */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;/*Propriedade para remover a tarja de cima das fotos, vai de 0 a 1*/
+    transition: all ease .5s; /*Efeito de transição ao mostra a tarja*/
+}
+
+/* Mostra tarja quando passamos o mouse */
+ul li:hover .overlay-img-link{
+    opacity: 1;
+
+}
+
+/*Mudar cor do link*/
+.overlay-img-link a{
+    color: white;
+    text-decoration: none;/*Remove o underline*/
+
+}

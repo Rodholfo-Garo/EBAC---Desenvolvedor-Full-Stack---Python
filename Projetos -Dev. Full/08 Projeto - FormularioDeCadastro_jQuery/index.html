@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validação de Formulario com Jquery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Validação de Formulario</h1>
+        <p>Usando os plugins Validate e Maskplugins </p>
+    </header>
+    <section>
+        <div class="container">
+            <fieldset>
+                <legend>Validação de Formulario</legend>
+                <form>
+                    <div class="formCampo">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="formCampo">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="formCampo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+                    <div class="formCampo">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="edit_cpf">
+                    </div>
+                    <div class="formCampo">
+                        <label for="endereco">Endereço Completo</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+                    <div class="formCampo">
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" id="cep">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                
+            </fieldset>
+            
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

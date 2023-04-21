@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comparando Numeros</title>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Comparando Numeros</legend>
+            <header>
+                <p>Veja se o valor digitado em A é menor que B</p>      
+            </header>               
+            <section>
+                <form id="submit-form">
+                    <div class="container_input">
+                        <label for="numeroA">Valor A</label>
+                        <input type="number" name="numeroA" id="NumeroA" min="1" max="10" required placeholder="Insira um valor entre 1 e 10">
+                    </div>
+                    <div class="container_input">
+                        <label for="numeroB">Valor B</label>
+                        <input type="number" name="numeroB" id="NumeroB" min="1" max="10" required placeholder="Insira um valor entre 1 e 10">
+                    </div>
+                    
+                    <button type="submit">Comparar</button>
+
+                    <P class="success-menssage"></P>
+                    <P class="error-menssage"></P>
+                </form>
+            </section>            
+        </fieldset>        
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>

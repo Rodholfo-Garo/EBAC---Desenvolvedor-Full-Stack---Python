@@ -1,0 +1,33 @@
+Desenvolver uma alpicação Web que solicite uma nota de corte(minima), calcule a média das atividades, não permita que haja atividade repetida e informe se o Aluno foi aprovado ou não.
+
+Lógica do Projeto
+
+1 - Após o usuario inserir a materia e a nota, inserir uma nova linha na tabela, se a nota for maior ou igual a nota minima, o emoji muda.
+	a-Adicionar ouvinte ao Evento
+	b-Tirar Reload
+	c-Capturar campos Nome da Atividade e Nota
+	d-Testar com alert
+
+2-Adicionar informações no corpo da tabela como uma linha
+	a-Criar uma variavel linha(vai receber o codigo HTML como uma String)
+	b-Chamar os valores dos dados capturados da Tabela
+	c-Fazer ele inserir uma nova linha após o submit 
+	d-Inserir os valores no corpo da tabela informando se foi aprovado ou não
+	e-Limpar os campos após inserir o conteudo
+	f-Inserir os emojis de aprovado e reprovado de forma dinamica
+
+3-Trabalhar Roda-pé(médias das notas)
+	a-Criar um array para adiconar as atividades
+	b-Criar um array para adiconar as notas
+	c-Todas vez que o adiciona linhas for chamado fazer um push para adicionar o conteudo no array
+	d-Conferir no console
+	e-Converter para numero decimal
+	f-criar um laço para somar as notas
+	g-retornar a divisão das notas para se ter as medias
+	h-Jogar o resultado no HTML
+	i-pedir uma entrada do usuario para definir a nota minima
+	j-converter a entreda de string para float.
+
+4-Não permtir Atividades duplicadas
+	a-No adiconaLinha inserir um IF (usar a função includes)
+	h-Limitar as casa decimais do resultado(toFixed)
