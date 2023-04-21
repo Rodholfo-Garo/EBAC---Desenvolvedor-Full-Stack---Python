@@ -1,0 +1,53 @@
+.nav-item {
+    text-align: center;
+}
+
+.carousel-indicators,
+#cabecalho{
+    color: orange;
+    background-color: orange;
+}
+
+.titulo{
+    color: orange;
+}
+
+.sales-item, .rent-item{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sales-item .btn, .rent-item .btn{
+    margin-top: 10px;
+    transition: 0.5s;
+    
+}
+
+.sales-item .btn:hover, .rent-item .btn:hover{
+    transform: scale(1.1);
+    color: bisque;
+}
+
+
+.investment{
+    text-align: center;
+}
+.investment i{
+    font-size: 80px;
+}
+
+.investment i, .investment h4{
+    transition: 0.5s;
+}
+
+.investment > i:hover, .investment > h4:hover{
+    color: orange;
+}
+
+textarea{
+    resize:none;
+
+}
+#contact ul li{
+    list-style: none;
+}
