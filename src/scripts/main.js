@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+
     function insert(num){
         /* Inserir numeros */
         var numero = document.getElementById('resultado').innerHTML;
@@ -26,4 +26,3 @@ document.addEventListener('DOMContentLoaded', function(){
             document.getElementById('resultado').innerHTML="0"
         }
     }
-})
